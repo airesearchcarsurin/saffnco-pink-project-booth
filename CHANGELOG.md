@@ -7,6 +7,14 @@ Format tanggal: YYYY-MM-DD.
 
 ---
 
+## 2026-09-29 — Alamat bawaan mengarah ke domain acara
+
+`apiBaseUrl` dan `kioskUrl` bawaan sebelumnya masih memakai domain lama.
+Mesin yang baru dipasang sekarang menembak `api.thepinkpoise-saffnco.com` dan
+membuka kiosk di `thepinkpoise-saffnco.com`.
+
+---
+
 ## 2026-09-29 — Aplikasi perangkat booth pertama
 
 Cangkang Electron untuk tiga titik photobooth. Berisi hanya apa yang tidak

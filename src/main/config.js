@@ -17,9 +17,9 @@ const path = require('node:path');
 
 const DEFAULTS = {
   /** Alamat backend FastAPI. */
-  apiBaseUrl: 'https://api.pinksociety.saffnco.id',
+  apiBaseUrl: 'https://api.thepinkpoise-saffnco.com',
   /** Alamat halaman kiosk yang sudah ter-deploy. */
-  kioskUrl: 'https://pinksociety.saffnco.id/start',
+  kioskUrl: 'https://thepinkpoise-saffnco.com/start',
   /** Kode titik seperti terdaftar di backend: titik-1, titik-2, titik-3. */
   deviceCode: '',
   /** Kunci API device. Hanya ada di perangkat ini. */
