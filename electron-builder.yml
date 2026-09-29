@@ -1,0 +1,35 @@
+appId: id.saffnco.photobooth.booth
+productName: SAFF Photobooth
+copyright: SAFF & Co.
+
+directories:
+  output: dist
+
+files:
+  - src/**/*
+  - package.json
+  - '!test/**'
+  - '!docs/**'
+
+win:
+  target:
+    # NSIS, bukan portable. Pemasangan lewat installer membuat aplikasi ini
+    # punya lokasi tetap, sehingga pintasan Startup menunjuk ke jalur yang
+    # tidak berubah setelah pembaruan.
+    - target: nsis
+      arch:
+        - x64
+  artifactName: SAFF-Photobooth-Setup-${version}.${ext}
+
+nsis:
+  oneClick: false
+  perMachine: true
+  allowToChangeInstallationDirectory: false
+  createDesktopShortcut: true
+  createStartMenuShortcut: true
+  shortcutName: SAFF Photobooth
+
+# Tanpa penandatanganan kode. SmartScreen akan memperingatkan saat pemasangan
+# pertama di tiap perangkat, dan itu ditangani sekali saat memasang — membeli
+# sertifikat untuk tiga perangkat internal tidak sepadan.
+forceCodeSigning: false

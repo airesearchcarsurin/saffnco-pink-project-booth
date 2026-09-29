@@ -1,0 +1,7 @@
+node_modules/
+dist/
+*.log
+
+# Setelan per perangkat berisi kunci API device. Tidak boleh masuk repo.
+config.json
+.env

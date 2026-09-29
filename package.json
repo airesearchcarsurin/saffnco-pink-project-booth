@@ -1,0 +1,22 @@
+{
+  "name": "saffnco-photobooth-booth",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Cangkang Electron untuk titik photobooth SAFF & Co. — kamera DSLR lewat digiCamControl dan antrean unggahan tahan mati lampu.",
+  "author": "SAFF & Co.",
+  "license": "UNLICENSED",
+  "main": "src/main/index.js",
+  "type": "commonjs",
+  "scripts": {
+    "start": "electron .",
+    "dev": "electron . --dev",
+    "test": "node --test test/",
+    "lint": "oxlint src test",
+    "build:win": "electron-builder --win --x64"
+  },
+  "devDependencies": {
+    "electron": "^33.2.0",
+    "electron-builder": "^25.1.8",
+    "oxlint": "^0.15.0"
+  }
+}
