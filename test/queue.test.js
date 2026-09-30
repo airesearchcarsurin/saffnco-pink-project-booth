@@ -75,8 +75,6 @@ function installFakeApi() {
 
 const FULL_CATALOG = [
   'invitation',
-  'invitation_bw',
-  'invitation_pink',
   'framed',
   'framed_bw',
   'framed_pink',
@@ -156,11 +154,11 @@ describe('UploadQueue', () => {
     await until(async () => (await queue.list()).length === 0);
     queue.stop();
 
-    // Halaman hasil hanya butuh preview. Sembilan preview harus naik lebih
+    // Halaman hasil hanya butuh preview. Tujuh preview harus naik lebih
     // dulu supaya pengunjung yang langsung memindai QR tidak melihat kotak
     // kosong.
-    assert.deepEqual(calls.order.slice(0, 9), Array(9).fill('preview'));
-    assert.deepEqual(calls.order.slice(9), Array(9).fill('original'));
+    assert.deepEqual(calls.order.slice(0, 7), Array(7).fill('preview'));
+    assert.deepEqual(calls.order.slice(7), Array(7).fill('original'));
   });
 
   it('menahan pekerjaan di disk saat jaringan mati di tengah unggahan', async () => {

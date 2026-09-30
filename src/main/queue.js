@@ -1,7 +1,7 @@
 /**
  * Antrean unggahan yang selamat dari mati lampu.
  *
- * Bentuknya satu folder per sesi di disk: delapan belas berkas hasil ditambah
+ * Bentuknya satu folder per sesi di disk: empat belas berkas hasil ditambah
  * `job.json`. Setelah folder itu utuh, sesinya aman — perangkat boleh mati,
  * jaringan boleh hilang, dan unggahannya dilanjutkan saat aplikasi hidup lagi.
  *
@@ -41,7 +41,7 @@ const KEEP_FAILED_HOURS = 72;
  * Preview diunggah lebih dulu.
  *
  * Pengunjung yang memindai QR hanya memerlukan preview untuk melihat
- * kesembilan hasil. Mendahulukannya berarti halaman hasilnya sudah terisi
+ * ketujuh hasil. Mendahulukannya berarti halaman hasilnya sudah terisi
  * beberapa detik sebelum berkas aslinya selesai naik.
  */
 const variantOrder = (variant) => (variant === 'preview' ? 0 : 1);
